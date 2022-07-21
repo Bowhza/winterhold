@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@500&display=swap');
 
+@media (max-width: 650px) {
+    .glass-container {
+        width: 80vw;
+    }
+}
+
+@media (min-width: 650px) {
+    .glass-container {
+        width: 40vw;
+    }
+}
+
 html {
     font-family: 'Roboto Slab', serif;
 }
@@ -89,7 +101,7 @@ pre {
 .glass-container {
     padding: 15px 20px 25px;
     border-radius: 25px;
-    width: 80vw;
+    min-width: 30vw;
 }
 
 .bolded-text {
@@ -112,16 +124,10 @@ pre {
     width: 80vw;
 }
 
-.status-container{
+.status-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-}
-
-.status-text{
-    font-size: 20px;
-    margin: 0;
+    justify-content: center; 
 }
 
 #server-invite {
