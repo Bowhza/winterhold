@@ -7,6 +7,7 @@ html {
 body {
     display: flex;
     width: 100vw;
+    height: 100vh;
     margin: 0;
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
@@ -21,25 +22,47 @@ nav {
     position: fixed;
     padding: 10px;
     height: 60px;
+    z-index: 1;
 }
 
 a {
     text-decoration: none;
     color: black;
+    user-select: none;
 }
 
 main {
     width: 100vw;
     height: 100%;
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 100px;
 }
 
 h1 {
     color: black;
+    max-width: 80vw;
+
+}
+
+footer {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav, footer, .resources {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+}
+
+pre {
+    font-family: 'Roboto Slab', serif;
 }
 
 .logo-text {
@@ -61,8 +84,9 @@ h1 {
 }
 
 .resources {
-    padding: 20px 25px;
+    padding: 15px 20px 25px;
     border-radius: 25px;
+    max-width: 80vw;
 }
 
 .bolded-text {
@@ -70,13 +94,22 @@ h1 {
     font-size: large;
 }
 
-#contact {
-    text-decoration: line-through;
+.discord {
+    height: 50vh;
+    max-width: 80vw;
+    background-color: rgba(0, 255, 255, 0.650);
+    box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.650);
+    margin: 30px 0;
 }
 
-nav, .resources {
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.3px);
-    -webkit-backdrop-filter: blur(6.3px);
+.text-section {
+    width: 80vw;
+}
+
+#server-invite {
+    color: rgb(114,137,218);
+}
+
+#status {
+    text-decoration: line-through;
 }
