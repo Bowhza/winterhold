@@ -6,11 +6,10 @@ html {
 
 body {
     display: flex;
-    width: 100vw;
-    height: 100vh;
     margin: 0;
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 nav {
@@ -18,8 +17,9 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     position: fixed;
+    top: 0;
     padding: 10px;
     height: 60px;
     z-index: 1;
@@ -44,7 +44,6 @@ main {
 h1 {
     color: black;
     max-width: 80vw;
-
 }
 
 footer {
@@ -54,7 +53,7 @@ footer {
     align-items: center;
 }
 
-nav, footer, .resources {
+nav, footer, .glass-container {
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.3px);
@@ -63,6 +62,10 @@ nav, footer, .resources {
 
 pre {
     font-family: 'Roboto Slab', serif;
+}
+
+.master-container {
+    height: 100vh;
 }
 
 .logo-text {
@@ -83,10 +86,10 @@ pre {
     gap: 10px;
 }
 
-.resources {
+.glass-container {
     padding: 15px 20px 25px;
     border-radius: 25px;
-    max-width: 80vw;
+    width: 80vw;
 }
 
 .bolded-text {
@@ -97,19 +100,30 @@ pre {
 .discord {
     height: 50vh;
     max-width: 80vw;
-    background-color: rgba(0, 255, 255, 0.650);
-    box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.650);
     margin: 30px 0;
+    background-color: rgba(0, 255, 255, 0.650);
+}
+
+.discord, .glass-container {
+    box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.650);
 }
 
 .text-section {
     width: 80vw;
 }
 
-#server-invite {
-    color: rgb(114,137,218);
+.status-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-#status {
-    text-decoration: line-through;
+.status-text{
+    font-size: 20px;
+    margin: 0;
+}
+
+#server-invite {
+    color: rgb(114,137,218);
 }
