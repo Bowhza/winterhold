@@ -165,8 +165,7 @@ fieldset button {
     color: rgb(114,137,218);
 }
 
-#download{
-    text-decoration: line-through;
+#submit:hover {
     color: rgb(37, 131, 29);
 }
 

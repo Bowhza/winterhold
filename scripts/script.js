@@ -20,7 +20,7 @@ async function sendRequest(ev) {
         }],
     };
 
-    const waitlistID = "https://discord.com/api/webhooks/1000293661650726952/3NA_1d7X-drm3L0dOBnyaB1HfMsZbWz0fty3XoJ4qGT5LNf0mONioOvuduRT9rFCZcHf";
+    const waitlistID = "https://discord.com/api/webhooks/1000497243427704942/DoPAUhNIUtk-VfLWTK7bCzG-npsdKhlvzIJnbTTjNol6lFlXHsTrrp4Dph2Dj0rN12xm";
 
     const response = await fetch(waitlistID, {
         method: 'POST',
