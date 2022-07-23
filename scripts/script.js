@@ -4,6 +4,8 @@ async function sendRequest(ev) {
     const discordName = document.getElementById('discord-name').value;
     const regionSelect = document.getElementById('regions');
     const region = regionSelect.options[regionSelect.selectedIndex].text;
+    const currentTime = new Date();
+    currentTime.toDateString();
 
     const webhookBody = {
         embeds: [{
@@ -11,7 +13,10 @@ async function sendRequest(ev) {
         fields: [
             { name: 'Discord:', value: discordName },
             { name: 'Region:', value: region }
-        ]
+        ],
+        footer: {
+            text: `Time Submitted: ${currentTime}`
+        }
         }],
     };
 
