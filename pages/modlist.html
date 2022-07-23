@@ -38,7 +38,7 @@
                     <h3 id="download">Download Here</h3>
                 </a>
 
-                <form>
+                <form onsubmit="sendRequest(event)">
                     <fieldset>
                         <legend style="font-weight: bold; font-size: 20px;">Join the Waitlist</legend>
                         <p>Note: If you are a server booster you do not need to sign up for the waitlist.
@@ -51,13 +51,11 @@
                         <div>
                             <label for="regions">Region</label>
                             <select name="regions" id="regions">
-                                <optgroup label="Region" id="region-select">
-                                    <option value="europe">Europe</option>
-                                    <option value="north-america">North America</option>
-                                    <option value="south-america">South America</option>
-                                    <option value="asia">Asia</option>
-                                    <option value="oceania">Oceania</option>
-                                </optgroup>
+                                <option value="europe">Europe</option>
+                                <option value="north-america">North America</option>
+                                <option value="south-america">South America</option>
+                                <option value="asia">Asia</option>
+                                <option value="oceania">Oceania</option>
                             </select>
                         </div>
                         <div>
@@ -65,7 +63,6 @@
                         </div>
                     </fieldset>
                 </form>
-
             </section>
         </main>
         <footer>
