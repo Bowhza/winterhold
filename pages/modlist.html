@@ -7,6 +7,7 @@
         <title>Winterhold Skyrim Reborn</title>
         <link rel="stylesheet" href="../style.css">
         <link rel="icon" href="../images/skyrim-icon.jpg">
+        <script src="../scripts/script.js"></script>
     </head>
 <body>
     <div class="master-container">
@@ -26,17 +27,45 @@
         <main id="resource-main">
             <h1 id="resource-text">Mod List</h1>
             <section class="glass-container">
+                
                 <p>The modpack is for our Modded RP server. 
                     The mods are not required to play on our public vanilla servers.
                 </p>
-                <p>This will take you to a download link with a .zip file that contains all of the required mods.</p>
-                <p>The dependencies and install instructions are going to be available on the Discord server.</p>
-                <a href="">
-                    <h3 id="download">Download</h3>
-                </a>
-                <p id="note">The download will be available soon once the server and mod pack is ready.
-                    The modded server will have priority to nitro boosters followed by other members.
+                <p>The whole modlist, dependencies, and install instructions are going to be available on the Discord server
+                    once everything is set up.
                 </p>
+                <a href="">
+                    <h3 id="download">Download Here</h3>
+                </a>
+
+                <form>
+                    <fieldset>
+                        <legend style="font-weight: bold; font-size: 20px;">Join the Waitlist</legend>
+                        <p>Note: If you are a server booster you do not need to sign up for the waitlist.
+                            You will be the first to have access.
+                        </p>
+                        <div>
+                            <label for="discord-name">Discord Name</label>
+                            <input type="text" name="discord-name" id="discord-name" placeholder="Ex. Discord#1234">
+                        </div>
+                        <div>
+                            <label for="regions">Region</label>
+                            <select name="regions" id="regions">
+                                <optgroup label="Region" id="region-select">
+                                    <option value="europe">Europe</option>
+                                    <option value="north-america">North America</option>
+                                    <option value="south-america">South America</option>
+                                    <option value="asia">Asia</option>
+                                    <option value="oceania">Oceania</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div>
+                            <button id="submit" type="submit">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+
             </section>
         </main>
         <footer>

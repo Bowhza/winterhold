@@ -140,15 +140,33 @@ pre {
     justify-content: center; 
 }
 
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+fieldset input, #regions {
+    height: 25px;
+    max-width: 10em;
+    width: 100%;
+}
+
+fieldset button {
+    height: 30px;
+    max-width: 15em;
+    width: 100%;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
 #server-invite {
     color: rgb(114,137,218);
 }
 
 #download{
     text-decoration: line-through;
-    color: rgb(180, 23, 23);
+    color: rgb(37, 131, 29);
 }
 
-#note {
-    font-weight: bold;
-}
