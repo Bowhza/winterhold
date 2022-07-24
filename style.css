@@ -108,26 +108,24 @@ pre {
     gap: 10px;
 }
 
+.bolded-text {
+    font-weight: bold;
+    font-size: large;
+}
+
 .glass-container {
     padding: 15px 20px 25px;
     border-radius: 25px;
     min-width: 30vw;
-}
-
-.bolded-text {
-    font-weight: bold;
-    font-size: large;
+    box-shadow: 0 0 20px 5px rgba(75, 75, 75, 0.35);
 }
 
 .discord {
     height: 400px;
     max-width: 80vw;
     margin: 30px 0;
-    background-color: rgba(0, 255, 255, 0.650);
-}
-
-.discord, .glass-container {
-    box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.650);
+    box-shadow: 0 0 20px 5px rgba(114, 137, 218, 0.65);
+    border-radius: 10px;
 }
 
 .text-section {
@@ -162,7 +160,7 @@ fieldset button {
 }
 
 #server-invite {
-    color: rgb(114,137,218);
+    color: rgb(114, 137, 218);
 }
 
 #submit:hover {
