@@ -138,6 +138,10 @@ pre {
     justify-content: center; 
 }
 
+legend {
+    margin: 0 auto;
+}
+
 fieldset {
     display: flex;
     flex-direction: column;
